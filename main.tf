@@ -114,7 +114,7 @@ module "iam" {
         {
             "Effect": "Allow",
             "Action": [
-                "kinesis:SubscribeToShard",
+                "kinesis:SubscribeToShard"
             ],
             "Resource": [
                 "${data.aws_kinesis_stream.target.arn}/consumer/*:*"
